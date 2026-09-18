@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C-Gest · Información legal</title>
+<style>
+:root {
+  --verde: #2f6f4f; --verde-claro: #eaf3ee;
+  --tinta: #1d2b24; --tinta-suave: #4a5a51; --tinta-tenue: #6d7d74;
+  --papel: #ffffff; --papel-hundido: #f7f9f8; --borde: #dbe4de;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --verde: #7fc49c; --verde-claro: #16241d;
+    --tinta: #e8efea; --tinta-suave: #b9c7c0; --tinta-tenue: #8e9d95;
+    --papel: #101713; --papel-hundido: #161f1a; --borde: #27352d;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--papel); color: var(--tinta);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.hoja { max-width: 42rem; margin: 0 auto; padding-block: 40px 72px; padding-left: 20px; padding-right: 20px; }
+h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 6px; text-wrap: balance; }
+h2 { font-size: 1.2rem; margin: 34px 0 10px; color: var(--verde); text-wrap: balance; }
+h3 { font-size: 1.02rem; margin: 22px 0 8px; }
+p, li { color: var(--tinta-suave); }
+strong { color: var(--tinta); }
+ul { padding-left: 1.2em; }
+li { margin-bottom: 6px; }
+hr { border: none; border-top: 1px solid var(--borde); margin: 32px 0; }
+a { color: var(--verde); }
+code { background: var(--papel-hundido); padding: 1px 5px; border-radius: 5px; font-size: .92em; }
+.marca {
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  padding-bottom: 14px; margin-bottom: 26px; border-bottom: 2px solid var(--borde);
+}
+.marca .nombre { font-weight: 800; font-size: 1.05rem; color: var(--verde); letter-spacing: .01em; }
+.marca .que { font-size: .85rem; color: var(--tinta-tenue); }
+.pie { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--borde); font-size: .85rem; color: var(--tinta-tenue); }
+.pie a { margin-right: 14px; }
+.fichas { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 26px; }
+.ficha {
+  display: block; padding: 18px 20px; border: 1px solid var(--borde); border-radius: 12px;
+  background: var(--papel-hundido); text-decoration: none; color: inherit;
+}
+.ficha:hover { border-color: var(--verde); }
+.ficha strong { display: block; color: var(--verde); margin-bottom: 4px; }
+.ficha span { font-size: .9rem; color: var(--tinta-tenue); }
+</style>
+</head>
+<body>
+<main class="hoja">
+  <div class="marca">
+    <span class="nombre">C-Gest</span>
+    <span class="que">Gestión de comunidades de propietarios</span>
+  </div>
+<h1>Información legal de C-Gest</h1>
+<p>C-Gest es una aplicación para que una comunidad de propietarios lleve su propia
+gestión: las cuentas, los recibos, las juntas, las actas y los partes de avería.</p>
+<div class="fichas">
+  <a class="ficha" href="./privacidad.html">
+    <strong>Política de privacidad</strong>
+    <span>Qué datos se guardan, quién los ve y cómo se borran.</span>
+  </a>
+  <a class="ficha" href="./terminos.html">
+    <strong>Condiciones de uso</strong>
+    <span>Qué es C-Gest, qué garantiza y qué no.</span>
+  </a>
+</div>
+  <div class="pie">
+    <a href="./">Inicio</a>
+    <a href="./privacidad.html">Privacidad</a>
+    <a href="./terminos.html">Condiciones</a>
+    <br><br>
+    C-Gest · <a href="mailto:cgest.soporte@gmail.com">cgest.soporte@gmail.com</a>
+  </div>
+</main>
+</body>
+</html>
