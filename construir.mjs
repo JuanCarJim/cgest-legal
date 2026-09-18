@@ -64,7 +64,16 @@ function aHtml(md) {
     const titulo = /^(#{1,4})\s+([\s\S]*)$/.exec(bloque);
     if (titulo) {
       const n = titulo[1].length;
-      salida.push(`<h${n}>${enLinea(titulo[2].replace(/\s*\n\s*/g, ' '))}</h${n}>`);
+      const texto = titulo[2].replace(/\s*\n\s*/g, ' ');
+      // Cada título con su ancla: Google Play pide una dirección que lleve
+      // DIRECTAMENTE a cómo se borra la cuenta, no a la política entera.
+      const ancla = texto
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '');
+      salida.push(`<h${n} id="${ancla}">${enLinea(texto)}</h${n}>`);
       continue;
     }
 
