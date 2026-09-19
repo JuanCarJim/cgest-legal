@@ -107,6 +107,20 @@ reposo y en tránsito.
 C-Gest no está dirigida a menores de 18 años. Se es propietario o inquilino de
 una vivienda, no usuario suelto.
 
+## Si nos escribe desde la web
+
+En la página de C-Gest hay un formulario para pedir información. Lo que escriba
+ahí —su nombre, su correo, y si quiere su teléfono, el nombre de su comunidad,
+el municipio y cuántas viviendas tiene— se guarda para poder contestarle y
+prepararle un presupuesto. Nada más.
+
+Ahí usted todavía no es cliente, así que el tratamiento se basa en su
+consentimiento: lo da marcando la casilla del formulario y puede retirarlo
+cuando quiera escribiéndonos. **Esos datos no se ceden a nadie, no se usan para
+publicidad y no se cruzan con los de ninguna comunidad.**
+
+Si no llegamos a trabajar juntos, la solicitud se borra al año de recibirla.
+
 ## Contacto
 
 CORREO-PENDIENTE
